@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,9 +8,11 @@ export default defineConfig({
     proxy: {
       "/api/": "https://food-app-backend-api.vercel.app/",
       "/uploads/": "https://food-app-backend-api.vercel.app/",
+      changeOrigin: true,
+      secure: false,
 
       // "/api/": "http://localhost:5000/",
       // "/uploads/": "http://localhost:5000/",
     },
   },
-})
+});
