@@ -1,4 +1,4 @@
-export const BASE_URL = "https://food-app-backend-api.vercel.app";
+export const BASE_URL = "https://food-app-backend-api.vercel.app/";
 // export const BASE_URL = "https://food-app-backend-api.vercel.app/";
 // export const BASE_URL = process.env.NODE_ENV === 'production' 
 // ? 'https://food-app-backend-api.vercel.app' 
